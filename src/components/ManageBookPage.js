@@ -57,7 +57,7 @@ const ManageBookPage = props => {
   }
 
   return (
-    <>
+    <div className="container">
       <h2>Manage Book</h2>
       <BookForm
         errors={errors}
@@ -65,7 +65,7 @@ const ManageBookPage = props => {
         onChange={handleChange}
         onSubmit={handleSubmit}
       />
-    </>
+    </div>
   );
 };
 

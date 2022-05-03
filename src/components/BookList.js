@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function BookList(props) {
   return (
-    <table className="table">
+    <table className="table table-hover border">
       <thead>
         <tr>
           <th>Title</th>

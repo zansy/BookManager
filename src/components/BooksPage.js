@@ -18,13 +18,23 @@ function BooksPage() {
   }
 
   return (
-    <>
-      <h2>Books</h2>
-      <Link className="btn btn-primary" to="/book">
-        Add Book
-      </Link>
-      <BookList books={books} deleteBook={deleteBook} />
-    </>
+    <div class="container">
+        <div className="row">
+            <div className="col">
+                <h2>Books</h2>
+            </div>
+            <div className="col" align="right">
+                <Link className="btn btn-primary" to="/book">
+                    Add Book
+                </Link>
+            </div>
+        </div>
+      <div className="row" style={{marginTop:"10px"}} >
+        <div className="col">
+            <BookList books={books} deleteBook={deleteBook} />
+        </div>
+      </div>
+    </div>
   );
 }
 
